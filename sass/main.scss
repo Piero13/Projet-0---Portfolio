@@ -270,13 +270,14 @@ $quaternary-color: #E04F5F;
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
+        height: 500px;
 
         &__img {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 500px;
+            height: 100%;
             overflow: hidden;
             @include primary-border();
             background-color: #ffffffaa;
@@ -412,10 +413,12 @@ $quaternary-color: #E04F5F;
                 align-items: flex-end;
                 justify-content: center;
                 width: 40%;
+                max-width: 350px;
                 padding: 5px;
                 margin-right: 60px;
                 border: 2px solid $quaternary-color;
                 border-radius: 10px;
+                background-color: $tertiary-color;
 
                 & h4, p {
                     width: 100%;
@@ -436,10 +439,12 @@ $quaternary-color: #E04F5F;
                 align-items: flex-start;
                 justify-content: center;
                 width: 40%;
+                max-width: 350px;
                 padding: 5px;
                 margin-left: 60px;
                 border: 2px solid $quaternary-color;
                 border-radius: 10px;
+                background-color: $tertiary-color;
 
                 & h4, p {
                     width: 100%;
@@ -532,5 +537,77 @@ $quaternary-color: #E04F5F;
 
     &__copyright {
         color: $tertiary-color;
+    }
+}
+
+/***************/
+/*media queries*/
+/***************/
+
+//Format mobile
+@media screen and (max-width: 768px) {
+    
+}
+
+//Format tablette
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .main {
+        padding: 150px 0;
+    }
+
+    .welcome {
+        width: 80%;
+    }
+}
+
+//Format desktop small
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+    .projects {
+        &__viewer {
+            height: 400px;
+
+            &__img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+//Format desktop medium
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .projects {
+        &__viewer {
+            height: 500px;
+
+            &__img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+//Format desktop xl
+@media screen and (min-width: 1441px) and (max-width: 1680px) {
+    .projects {
+        &__viewer {
+            height: 600px;
+
+            &__img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+//Format desktop xxl
+@media screen and (min-width: 1681px) {
+    .projects {
+        &__viewer {
+            height: 700px;
+
+            &__img {
+                height: 100%;
+            }
+        }
     }
 }
