@@ -595,7 +595,9 @@ $quaternary-color: #E04F5F;
     }
 
     .projects {
+        margin-top: 150px;
         padding: 70px 10px 20px 10px;
+
         &__title {
             top: -46px;
             left: 50%;
@@ -624,6 +626,23 @@ $quaternary-color: #E04F5F;
 
         &__link {
             margin-top: 20px;
+        }
+    }
+
+    .career {
+        margin-top: 150px;
+        padding: 70px 10px 20px 10px;
+        
+        &__title {
+            top: -46px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 90px;
+
+            & h3 {
+                font-size: 14px;
+            }
         }
     }
 }
