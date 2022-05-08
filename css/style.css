@@ -447,6 +447,72 @@ h1, h2, h3 {
 /***************/
 /*media queries*/
 /***************/
+@media screen and (max-width: 768px) {
+  a, p, h4 {
+    font-size: 14px;
+  }
+
+  .btn-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .main {
+    padding: 150px 0;
+  }
+
+  .header__nav {
+    display: none;
+  }
+  .header__logo__image {
+    width: 40px;
+    height: 40px;
+  }
+  .header__logo__title h1 {
+    font-size: 20px;
+  }
+
+  .welcome {
+    padding-top: 60px;
+  }
+  .welcome__image {
+    top: -52px;
+    width: 100px;
+    height: 100px;
+  }
+  .welcome__text h2 {
+    font-size: 18px;
+  }
+
+  .projects {
+    padding: 70px 10px 20px 10px;
+  }
+  .projects__title {
+    top: -46px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+  }
+  .projects__title h3 {
+    font-size: 14px;
+  }
+  .projects__viewer {
+    height: 250px;
+  }
+  .projects__viewer .btn-left {
+    left: 0;
+    bottom: -40px;
+  }
+  .projects__viewer .btn-right {
+    right: 0;
+    bottom: -40px;
+  }
+  .projects__link {
+    margin-top: 20px;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .main {
     padding: 150px 0;

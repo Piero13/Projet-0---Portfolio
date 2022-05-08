@@ -546,7 +546,86 @@ $quaternary-color: #E04F5F;
 
 //Format mobile
 @media screen and (max-width: 768px) {
-    
+    a, p, h4 {
+        font-size: 14px;
+    }
+
+    .btn-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .main {
+        padding: 150px 0;
+    }
+
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        &__logo {
+            &__image {
+                width: 40px;
+                height: 40px;
+            }
+
+            &__title {
+                & h1 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .welcome {
+        padding-top: 60px;
+        &__image {
+            top: -52px;
+            width: 100px;
+            height: 100px;
+        }
+
+        &__text {
+            & h2 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .projects {
+        padding: 70px 10px 20px 10px;
+        &__title {
+            top: -46px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 90px;
+
+            & h3 {
+                font-size: 14px;
+            }
+        }
+
+        &__viewer {
+            height: 250px;
+
+            & .btn-left {
+                left: 0;
+                bottom: -40px;
+            }
+
+            & .btn-right {
+                right: 0;
+                bottom: -40px;
+            }
+        }
+
+        &__link {
+            margin-top: 20px;
+        }
+    }
 }
 
 //Format tablette
