@@ -547,12 +547,12 @@ $quaternary-color: #E04F5F;
 //Format mobile
 @media screen and (max-width: 768px) {
     a, p, h4 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .btn-arrow {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         font-size: 16px;
     }
 
@@ -561,6 +561,8 @@ $quaternary-color: #E04F5F;
     }
 
     .header {
+        height: 80px;
+
         &__nav {
             display: none;
         }
@@ -599,14 +601,14 @@ $quaternary-color: #E04F5F;
         padding: 70px 10px 20px 10px;
 
         &__title {
-            top: -46px;
+            top: -51px;
             left: 50%;
             transform: translateX(-50%);
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
 
             & h3 {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
 
@@ -615,17 +617,21 @@ $quaternary-color: #E04F5F;
 
             & .btn-left {
                 left: 0;
-                bottom: -40px;
+                bottom: -50px;
             }
 
             & .btn-right {
                 right: 0;
+                bottom: -50px;
+            }
+
+            &__dots {
                 bottom: -40px;
             }
         }
 
         &__link {
-            margin-top: 20px;
+            margin-top: 30px;
         }
     }
 
@@ -634,15 +640,19 @@ $quaternary-color: #E04F5F;
         padding: 70px 10px 20px 10px;
         
         &__title {
-            top: -46px;
+            top: -51px;
             left: 50%;
             transform: translateX(-50%);
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
 
             & h3 {
-                font-size: 14px;
+                font-size: 16px;
             }
+        }
+
+        &__timeline {
+            margin-bottom: 20px;
         }
     }
 }
@@ -656,18 +666,36 @@ $quaternary-color: #E04F5F;
     .welcome {
         width: 80%;
     }
+
+    .projects {
+        padding: 100px 60px 40px 60px;
+
+        &__viewer {
+            height: 450px;
+        }
+    }
 }
 
 //Format desktop small
 @media screen and (min-width: 993px) and (max-width: 1280px) {
+    .main {
+        padding: 150px 150px;
+    }
+
     .projects {
+        margin-top: 150px;
+
         &__viewer {
-            height: 400px;
+            height: 450px;
 
             &__img {
                 height: 100%;
             }
         }
+    }
+
+    .career {
+        margin-top: 150px;
     }
 }
 

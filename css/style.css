@@ -449,12 +449,12 @@ h1, h2, h3 {
 /***************/
 @media screen and (max-width: 768px) {
   a, p, h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .btn-arrow {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     font-size: 16px;
   }
 
@@ -462,6 +462,9 @@ h1, h2, h3 {
     padding: 150px 0;
   }
 
+  .header {
+    height: 80px;
+  }
   .header__nav {
     display: none;
   }
@@ -490,28 +493,31 @@ h1, h2, h3 {
     padding: 70px 10px 20px 10px;
   }
   .projects__title {
-    top: -46px;
+    top: -51px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
   .projects__title h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .projects__viewer {
     height: 250px;
   }
   .projects__viewer .btn-left {
     left: 0;
-    bottom: -40px;
+    bottom: -50px;
   }
   .projects__viewer .btn-right {
     right: 0;
+    bottom: -50px;
+  }
+  .projects__viewer__dots {
     bottom: -40px;
   }
   .projects__link {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .career {
@@ -519,14 +525,17 @@ h1, h2, h3 {
     padding: 70px 10px 20px 10px;
   }
   .career__title {
-    top: -46px;
+    top: -51px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
   .career__title h3 {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .career__timeline {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -537,13 +546,31 @@ h1, h2, h3 {
   .welcome {
     width: 80%;
   }
+
+  .projects {
+    padding: 100px 60px 40px 60px;
+  }
+  .projects__viewer {
+    height: 450px;
+  }
 }
 @media screen and (min-width: 993px) and (max-width: 1280px) {
+  .main {
+    padding: 150px 150px;
+  }
+
+  .projects {
+    margin-top: 150px;
+  }
   .projects__viewer {
-    height: 400px;
+    height: 450px;
   }
   .projects__viewer__img {
     height: 100%;
+  }
+
+  .career {
+    margin-top: 150px;
   }
 }
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
