@@ -98,7 +98,7 @@ $quaternary-color: #E04F5F;
         color: $tertiary-color;
     }
 
-    & .toggle {
+    & #ham-menu {
         display: none;
     }
 
@@ -557,14 +557,42 @@ $quaternary-color: #E04F5F;
     }
 
     .main {
-        padding: 150px 0;
+        padding: 220px 0;
     }
 
     .header {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
         height: 80px;
 
+        & #ham-menu {
+            display: block;
+            font-size: 24px;
+            color: $tertiary-color;
+        }
+
         &__nav {
-            display: none;
+            position: fixed;
+            z-index: 4;
+            top: -100%;
+            left: 0;
+            width: 100vw;
+            height: calc(50vh - 80px);
+            background: $primary-color;
+            
+            transition: 1s;
+
+            &.active {
+                top: 80px;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
         }
 
         &__logo {
@@ -661,6 +689,42 @@ $quaternary-color: #E04F5F;
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .main {
         padding: 150px 0;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        height: 80px;
+
+        & #ham-menu {
+            display: block;
+            font-size: 24px;
+            color: $tertiary-color;
+        }
+
+        &__nav {
+            position: fixed;
+            z-index: 4;
+            top: -100%;
+            left: 0;
+            width: 100vw;
+            height: calc(50vh - 80px);
+            background: $primary-color;
+            
+            transition: 1s;
+
+            &.active {
+                top: 80px;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
     }
 
     .welcome {
