@@ -677,14 +677,22 @@ h1, h2, h3 {
 /*main*/
 /******/
 .welcome__image {
+  position: absolute;
+  top: -62px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #002d40;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px #002d40;
   background: linear-gradient(to top left, #1aa6b7, #002d40);
 }
 .welcome__image h2 {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: #d9ecf2;
 }
 .welcome__text {
@@ -702,6 +710,19 @@ h1, h2, h3 {
 .welcome__text .download-link:hover, .welcome__text i:hover {
   color: #d1d1d1;
   text-decoration: 2px underline white;
+}
+
+/***************/
+/*media queries*/
+/***************/
+@media screen and (max-width: 768px) {
+  .welcome__image {
+    width: 100px;
+    height: 100px;
+  }
+  .welcome__image h2 {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
